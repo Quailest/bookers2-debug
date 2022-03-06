@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   before_action :ensure_correct_user, only: [:update]
 
   def show
@@ -27,6 +28,8 @@ class UsersController < ApplicationController
       render :edit
     end
   end
+
+
 
   private
 
