@@ -19,7 +19,7 @@
           </td>
           <td><%= link_to @bookdetail.title, @bookdetail %></td>
           <td><%= @bookdetail.body %></td>
-          <td class= "favorite_buttons_<%= @book.id %>">
+          <td id= "favorite_buttons_<%= @bookdetail.id %>">
             <%= render "favorites/favorites", book: @bookdetail %>
           </td>
 
